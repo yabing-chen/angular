@@ -1,0 +1,34 @@
+  
+<div class="container">  
+	 <div class="well well-sm">
+        <strong>Create SOS</strong>        
+    </div>
+  
+    <div class="form-group">
+    	<label>Title: </label>
+    	<input type="text" class="form-control" id="title" [(ngModel)]="sosTitle">
+    </div>    
+    <div class="form-group">
+    	<label>Text</label> 
+    	<textarea class="form-control" id="text" [(ngModel)]="sosText"></textarea>
+    </div>
+    <div class="form-group">
+    	<button type="button" class="btn btn-primary" (click)="create()">Create</button>    	
+    </div>    
+    <div class="form-group">    	
+    	<label>{{status}}</label>
+    </div>
+    
+    <div *ngIf="show">  	
+    show
+	<div id ="modal" class="overlay">
+    	<div class="center">
+        	<img alt="" src="../../ajax-loader.gif" />
+    	</div>
+	</div>
+	</div>
+</div>
+  
+               	
+         
+  

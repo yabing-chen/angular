@@ -1,0 +1,57 @@
+  
+<div class="container">  
+	 <div class="well well-sm">
+        <strong>Alert Detail</strong>       
+    </div>
+    <!-- "http://placehold.it/400x250/000/fff" -->
+    
+    <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        ID: {{alert.id}}</h4>
+                    
+                     <ul class="list-group">
+    	 	 			<li class="list-group-item">
+    	 	 				EventID: {{alert.eventID}}
+    	 	 			</li>
+    	 	 			
+    	 	 			<li class="list-group-item">
+    	 	 			
+    	 	 				<div class="dropdown">
+    							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" (change)="onSelect($event.target.value)">Status
+    							<span class="caret"></span></button>
+    							<ul class="dropdown-menu">
+      								<li><a href="#">HTML</a></li>
+      								<li><a href="#">CSS</a></li>
+      								<li><a href="#">JavaScript</a></li>
+    							</ul>
+  							</div>					
+    	 	 			</li>
+    	 	 			
+    	 	 			<li class="list-group-item">
+    	 	 				Type: {{alert.type}}
+    	 	 			</li>
+    	 	 			
+    	 	 			<li class="list-group-item">
+    	 	 				Camera ID: {{alert.cameraID}}
+    	 	 			</li>
+    	 	 			
+    	 	 			<li class="list-group-item">
+    	 	 				 Time Stamp: {{alert.timestamp}}
+    	 	 			</li>
+    	 	 			
+    	 	 			<li class="list-group-item">
+    	 	 				priority: {{alert.priority}}
+    	 	 			</li>
+    	 	 			
+    	 	 			<li class="list-group-item">
+    	 	 				Building: {{alert.building}}
+    	 	 			</li>
+    	 	 		 </ul>      
+                    
+    </div>
+    <button class="btn" (click)="goBack()">Back</button>
+    <button class="btn" (click)="goBack()">Update</button>
+   
+               	
+            
+</div>
